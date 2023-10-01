@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">YourTube</div>
+      <button class="toggle-button" onclick="toggleMenu()">Menu</button>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">PLAY</a></li>
+          <li><img src="usha_img.jpg" /></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- mid -->
+    <div class="buttom-wrapper">
+      <div class="buttom-sidebar">
+        <div class="buttom-img">
+          <img src="usha_img.jpg" /><span>USHA SAHU</span>
+        </div>
+        <div class="sidebar-links">
+          <a href="#Profile"><i class="fa fa-fw fa-user"></i>&nbsp; Profile</a>
+          <a href="#Account"><i class="fa fa-address-book-o"></i>&nbsp; Account</a>
+          <a href="#Setting"><i class="fa fa-cog fa-fw"></i>&nbsp; Setting</a>
+          <a href="#Help">&nbsp;&nbsp;<i class="fa fa-info"></i>&nbsp;&nbsp; Help</a>
+          <a href="#recommendation"><i class="fa fa-fw fa-wrench"></i>&nbsp; Recommendations</a
+          >
+          <a href="#feedback"><i class="fa fa-comments"></i>&nbsp; FeedBack</a>
+          <a href="#report"><i class="fa fa-book"></i>&nbsp; My Report</a>
+        </div>
+      </div>
+
+      <!-- <div class="buttom-right">
+          <div class="toggle">
+              <button class="toggle-button" onclick="toggleMenu()">My Learning</button>
+              <button class="toggle-button" onclick="toggleMenu()">My Career</button>
+              <button class="toggle-button" onclick="toggleMenu()">Tools</button>
+              <button class="toggle-button" onclick="toggleMenu()">Resources</button>
+          </div> -->
+          <div class="buttom-right">
+            <div class="toggle">
+                <button class="toggle-h">My Learning</button>
+                <button class="toggle-h">My Career</button>
+                <button class="toggle-h">Tools</button>
+                <button class="toggle-h">Resources</button>
+            </div>
+        <div class="card-1">
+        <div class="card-wrapper" id="myCareerCard">
+          <div class="card">
+            <a href="https://youtu.be/sBJmRD7kNTk?si=r9IkOK9dBE2if-Ql">
+            <img src="card-1.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>ASMR Programming - Calculator App Coding - No Talking</h3>
+            <p>
+              AsmrProg<br>
+              187K subscribers 11 months ago</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/EirBuUUPbio?si=XNCUNQ0-MDATHZCl">
+            <img src="react.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>React JS Live Coding Interview 2023 - Cracking the Interview</h3>
+            <p>Coder Dost<br />
+              251K views
+              7 months ago</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/vJefOB8kec8?si=i8BNZAWQYFESAy7Q">
+            <img src="AI.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>The Truth about Artificial Intelligence and ChatGPT</h3>
+            <p>
+              Dhruv Rathee<br />
+              12.8M subscribers   
+              1 months ago</p>
+          
+              </p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/1g3kYtJf6Tw?si=sBEkn5jItngPzLOu">
+            <img src="java.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>Java or C++ or Python | Which language is best for Placements?
+            </h3>
+            <p>  Apna College <br>
+              920K views
+              5 months ago.</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/XKHEtdqhLK8?si=Vd8lNtJfv1MBeeFe">
+            <img src="video1.jpeg" width="430px" height="300px"class="img-video" ></a>
+            <h3>Python Full Course for free 🐍</h3>
+            <p>
+              Bro Code<br>
+              12M views <br>
+               2 years ago</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/jS5_hjFgfzA?si=GdpCPsWD24OO8d6E">
+            <img src="sql.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>Solving SQL Interview Query for Data Analyst asked by a Product based company</h3>
+            <p>
+              techTFQ<br />
+              234K subscribers 1 years ago</p>
+          </div>
+        </div>
+        <div class="card-wrapper" id="myLearningCard">
+          <div class="card">
+            <a href="https://youtu.be/3C7Db8cRuec?si=QiWE81iXm4i8j2UK">
+            <img src="codewithharry.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>One Effective Trick to Learn Coding Fast</h3>
+            <p>
+              CodeWithHarry<br />
+              4.44M subscribers 4 years ago</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/fTs3deU7n10?si=XyL6PU0xibCjOyLZ">
+            <img src="php.jpg" width="430px" height="300px"class="img-video" ></a>
+            <h3>PHP $_GET $_POST $_REQUEST Variables Tutorial in Hindi / Urdu
+            </h3>
+            <p>
+              Yahoo Baba
+              284K subscribers 3 years ago</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/cb-p_gkhIC0?si=JuC3Ca6R4wafiwRl">
+            <img src="css.jpeg" width="430px" height="300px" class="img-video" ></a>
+            <h3>CSS Implementation Tutorial in Hindi / Urdu
+              </h3>
+            <p>  Yahoo Baba <br>
+              284K subscribers 3 years ago</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/6cV3OwFrOkk?si=0Dc543WiKqROPAGz">
+            <img src="dashboard.png" width="430px" height="300px" class="img-video" ></a>
+            <h3>Power Bi tutorial for Beginners | Power BI Dashboard Project in Hindi | Power Bi Course 2023
+            </h3>
+            <p>
+              Rishabh Mishra<br />
+              132K subscribers.</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/NxvS-Uzjueg?si=UYqE4zFP5wiEHqcB">
+            <img src="coding.png.crdownload" width="430px" height="300px" class="img-video" ></a>
+            <h3>How I started coding from 0 and cracked Google | Best Free Resources for Coding</h3>
+            <p>
+              Fraz<br />
+              344K subscribers.</p>
+          </div>
+          <div class="card">
+            <a href="https://youtu.be/WohEYmqsquI?si=3ZUSBBq_FKbHKoYg">
+            <img src="english.jpg" width="430px" height="300px" class="img-video" ></a>
+            <h3>English Speaking Practice Techniques to use when Practising Alone - My favourite 9 ways
+            </h3>
+            <p>
+              Aleena Rais Live<br />
+              3.74M subscribers</p>
+          </div>
+        <!-- <div class="card-wrapper" id="toolsCard">
+          <div class="card">
+            <span></span>
+            <h3>Card 1 tools</h3>
+            <p>This is the description for Card 1.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 2</h3>
+            <p>This is the description for Card 2.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 3</h3>
+            <p>This is the description for Card 3.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 4</h3>
+            <p>This is the description for Card 4.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 5</h3>
+            <p>This is the description for Card 5.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 6</h3>
+            <p>This is the description for Card 6.</p>
+          </div>
+          </div>
+        <div class="card-wrapper" id="resourcesCard">
+          <div class="card">
+            <span></span>
+            <h3>Card 1 Resources</h3>
+            <p>This is the description for Card 1.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 2</h3>
+            <p>This is the description for Card 2.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 3</h3>
+            <p>This is the description for Card 3.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 4</h3>
+            <p>This is the description for Card 4.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 5</h3>
+            <p>This is the description for Card 5.</p>
+          </div>
+          <div class="card">
+            <span></span>
+            <h3>Card 6</h3>
+            <p>This is the description for Card 6.</p>
+          </div>
+         </div> -->
+
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>

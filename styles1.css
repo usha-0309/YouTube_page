@@ -1,0 +1,298 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Poppins',sans-serif;}
+
+/* Header styles */
+header {
+    background-color: #7b7b7b; 
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.main-menu li {
+    margin-right: 20px;
+    padding-top: 5px;
+
+}
+
+ .main-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: flex-end;
+
+
+} 
+.main-menu img {
+    width: 2.6vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin: 0rem;
+    
+    }
+    .nav{
+        display: flex;
+        margin-top: 40px;
+       height: 40px;
+       width: 50%;
+    }
+    .nav-link{
+    font-size: 1.9rem;
+    
+    background: #bda2ec;
+    margin-left: 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 9px solid #bda2ec;
+    opacity: 0.8;
+    width: 200px;
+text-align: center;
+    }
+    .nav-link:hover {
+        color: blue;
+        transform: scale(1.19);
+        background: blue;
+        color: #ffffff;
+        border: 9px solid blue;
+    }
+    .container{
+        display: flex;
+    }
+    .left-video {
+        width: 70%; /* Adjust the width as needed */
+        float: left;
+        margin-top: 20px;
+    }
+    .right-video-options {
+        width: calc(100%-70%); /* Adjust the width as needed */
+        float: left;
+        background-color: #f2f2f2; /* Customize background color */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .right-video-options h2 {
+        margin-top: 0;
+    }
+    
+    .right-video-options ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .right-video-options li {
+        margin-bottom: 10px;
+
+    }
+    h2{
+        margin-left: 5px;
+        line-break: auto;
+    }
+    span{
+        margin-left: 8px;
+        font-size: 12px;
+        font-weight:normal;
+        margin-left: 5px;
+    }
+   
+    
+    /* .right-video-options a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        font-size: 1.6vh;
+    } */
+.line{ 
+    border-left: 6px solid grey;
+    height: 420px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 60px;
+}
+
+/* ---------------------------------- */
+
+.home {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.left{
+    flex:0.65;
+    background-color: rgb(226, 246, 246);
+    padding-top: 10px;
+    border-right: 7px solid grey;
+    
+}
+
+
+.left-top{
+    padding: 10px
+}
+
+.right{
+    flex: 0.35;
+    background-color: rgb(226, 246, 246);
+
+}
+
+.right-wrapper{
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+
+    
+}
+.right-video-part ,.img-video{
+    display: flex;
+    align-items: top;
+    margin-left: 3px;
+    padding-left: 2px;
+
+
+}
+.right-content {
+    padding-bottom: 30px;
+    border-top: 7px solid grey;
+    padding-top: 5px;
+    
+}
+
+.right-content  > p {
+ font-size: 15px;
+    line-height: 20px;
+    padding-top: 10px
+}
+
+.left-bottom {
+    padding: 10px;
+    color: #242424
+} 
+
+.left-bottom > h1{
+    font-size: 28px;
+    padding-bottom: 12px
+}
+
+.left-bottom > h4{
+
+    font-size: 18px;
+}
+
+.togglee {
+    /* height: 100px; */
+    margin-top:10px;
+    /* margin-bottom:10px; */
+    padding: 10px;
+    width: 100vw;
+    display: flex
+
+}
+
+.togglee > h3 {
+    font-size: 16px;
+    background-color: rgb(191, 201, 230);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    width: 200px;
+    border-right: 2px solid #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.togglee > h3:hover {
+    transition: 0.3s;
+    width: 250px;
+    font-size: 16px;
+    background-color: rgb(72, 116, 226);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: #242424;
+}
+
+
+    /* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #7b7b7b; /* Red color similar to YouTube */
+        padding: 10px;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+    }
+
+    .main-menu.show {
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column; 
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .nav-link {
+        margin: 10px 0; 
+        width: 100%; /* Full width for smaller screens */
+    }
+}
